@@ -29,10 +29,10 @@ searchButton.addEventListener("click", () => {
            <h4>Currency:</h4>
                 <p>${data[0].currencies[Object.keys(data[0].currencies)].name
                 } - ${Object.keys(data[0].currencies)[0]}</p>
-                <h4>Common Languages:</h4>
+                <h4>Language(s):</h4>
                 <p>${Object.values(data[0].languages).toString().split(",").join(", ")}</p>
                 <h4>Population:</h4>
-                <p>${data[0].population}</p>
+                <p>${data[0].population.toLocaleString()}</p>
             </div>
         </div>
       `;
